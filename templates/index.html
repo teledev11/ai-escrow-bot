@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Escrow Bot - Secure Transactions</title>
+    <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .hero-section {
+            padding: 3rem 0;
+        }
+        .command-card {
+            transition: transform 0.3s;
+        }
+        .command-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-dark py-3">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <img src="/static/bot-logo.png" alt="Bot Logo" class="me-3" style="max-height: 50px;">
+                    <h1 class="m-0 text-light">Escrow Bot</h1>
+                </div>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary text-white" href="https://t.me/{{ bot_username }}" target="_blank">
+                                <i class="bi bi-telegram"></i> Open Bot
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section bg-dark text-white">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Secure Escrow Services for Digital Transactions</h1>
+                    <p class="lead mb-4">Our Telegram bot ensures safe transactions between buyers and sellers with encrypted escrow protection.</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="https://t.me/{{ bot_username }}" class="btn btn-primary btn-lg" target="_blank">
+                            Start Using Now
+                        </a>
+                        <a href="/features" class="btn btn-outline-light btn-lg">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Status Section -->
+    <section class="py-4 bg-success text-white text-center">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="spinner-grow spinner-grow-sm text-light me-2" role="status">
+                    <span class="visually-hidden">Active</span>
+                </div>
+                <p class="m-0">Bot Status: <strong>Active and Ready</strong> - Start chatting with our bot now!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Use Our Escrow Bot?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon text-primary">
+                                <i class="bi bi-shield-lock"></i>
+                            </div>
+                            <h3 class="card-title h5">Secure Transactions</h3>
+                            <p class="card-text">Your funds are held securely in escrow until both parties confirm the transaction is complete.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon text-primary">
+                                <i class="bi bi-currency-exchange"></i>
+                            </div>
+                            <h3 class="card-title h5">Multiple Payment Methods</h3>
+                            <p class="card-text">Support for both cryptocurrency and traditional fiat payment methods for maximum flexibility.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon text-primary">
+                                <i class="bi bi-chat-left-text"></i>
+                            </div>
+                            <h3 class="card-title h5">Dispute Resolution</h3>
+                            <p class="card-text">Fair and impartial dispute resolution system to protect both buyers and sellers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commands Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Available Bot Commands</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card command-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title"><code>/start</code></h5>
+                            <p class="card-text">Begin your journey with the bot. Get introduced to the features and how to use them.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card command-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title"><code>/register</code></h5>
+                            <p class="card-text">Create your account in our secure system to start making transactions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card command-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title"><code>/new</code></h5>
+                            <p class="card-text">Create a new escrow transaction as a seller, specifying details and payment method.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card command-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title"><code>/transactions</code></h5>
+                            <p class="card-text">View a list of your active, completed, and pending transactions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card command-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title"><code>/payment_methods</code></h5>
+                            <p class="card-text">Manage your saved payment methods for easier transactions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card command-card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title"><code>/help</code></h5>
+                            <p class="card-text">Get a complete list of all available commands and their descriptions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white text-center">
+        <div class="container">
+            <h2 class="mb-3">Ready to Make Secure Transactions?</h2>
+            <p class="lead mb-4">Start using our escrow bot today for safe digital transactions!</p>
+            <a href="https://t.me/{{ bot_username }}" class="btn btn-light btn-lg" target="_blank">
+                <i class="bi bi-telegram me-2"></i>Open Bot in Telegram
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Telegram Escrow Bot</h5>
+                    <p>A secure escrow service for digital goods and services transactions.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2025 Escrow Bot. All rights reserved.</p>
+                    <p><a href="/features" class="text-white">Features</a> | <a href="https://t.me/{{ bot_username }}" class="text-white">Open Bot</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
